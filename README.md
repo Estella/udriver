@@ -7,6 +7,12 @@ Requires libgeoip and libpcap to compile
 
 Compile on Linux: gcc udriver.c -lGeoIP -lm -lpcap -o udriver
 
+will need to load the geoip databases used /GeoIP you can adjust the source if you want to point to some other path.
+
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+
 # Compile for MIPS via emulated MIPS on QEMU
 
 apt-get install qemu-system-mips
