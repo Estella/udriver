@@ -29,11 +29,4 @@ apt-get install build-essential git autoconf libtool bison flex libapt-pkg-dev l
 ```
 Compile: gcc -static -Wall udriver.c -lGeoIP -lm -lpcap -o udriver
 
-# Notes
-I wanted to run this on EDGE router so went about compiling a static MIPS version to put onto the router.
 
-Example of the output: 
-
-
-
-![Image of udriver in operation](https://raw.githubusercontent.com/Estella/udriver/master/2018-09-22_20-05-47.png)
